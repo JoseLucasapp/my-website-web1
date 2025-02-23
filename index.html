@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de site utilizando HTML e CSS avançado.">
+    <title>Lukinhas</title>
+    <link rel="icon" href="assets/rey.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">
+                <a href="https://joselucasapp.com">Joselucasapp</a>
+            </h1>
+            <div class="mobile-menu">
+                <p>Menu</p>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#feedbacks">Recomendações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <section class="hero">
+            <div class="content">
+                <h1>Seja bem-vindo ao meu site!</h1>
+                <p>Desenvolvido com HTML, CSS e JavaScript. Aproveite para navegar pelo meu outro site.</p>
+                <a href="https://joselucasapp.com" target="_blank" class="btn">Clique aqui</a>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="about" class="about">
+            <div class="image">
+                <img src="assets/squirtle.gif" class="squirtle" alt="Gif do Squirtle">
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Mim</h2>
+                    <p>Olá eu sou o Squ... Errei... . Olá, sou o Lucas, desenvolvedor fullstack e solucionador de problemas. Tenho experiência com diversas ferramentas e tecnologias, e estou sempre em busca de aprendizado, seja na vida pessoal ou profissional.</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/joselucasapp" target="_blank">
+                        <img src="assets/icons/git.png" alt="Logo do GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jlgf524150/" target="_blank">
+                        <img src="assets/icons/linkedin.png" alt="Logo do LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/jlucasgf/" target="_blank">
+                        <img src="assets/icons/instagram.png" alt="Logo do Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projects" class="projects">
+            <h2>Meus Projetos</h2>
+            <div class="grid-container">
+                
+            </div>
+        </section>
+
+        <!-- Recomendações -->
+        <section id="feedbacks" class="feedbacks">
+            <h2>Recomendações</h2>
+            <div class="flex-container">
+                
+               
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Plugin VLibras para acessibilidade -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget();</script>
+    <script src="js/projects.js"></script>
+    <script src="js/feedbacks.js"></script>
+    <script src="js/menu-mobile.js"></script>
+</body>
+</html>

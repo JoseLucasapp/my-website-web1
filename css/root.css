@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fjalla-one-regular {
+    font-family: "Fjalla One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+}
+
+
+:root {
+    --main-color: #121116;
+    --primary: #000;
+    --secundary: #005;
+    --text-color: #fff;
+    --main-font: Fjalla One, sans-serif;
+    --black-opacity: rgba(0, 0, 0, 0.5);
+}

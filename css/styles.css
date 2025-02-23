@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    background-color: var(--main-color);
+    line-height: 1.6;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    background: var(--black-opacity);
+    top: 0;
+    z-index: 999;
+}
+
+/* Cabeçalho */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar .logo {
+    font-size: 32px;
+    font-weight: bold;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo a {
+    color: var(--text-color);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu a {
+    transition: 0.3s;
+    transform: scale(0.9);
+    margin: 0 15px;
+    padding: 2vh;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    transition: 0.3s;
+    transform: scale(1);
+    background-color: var(--text-color);
+    color: var(--primary);
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('../assets/page.webp') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding-bottom: 10vh;
+}
+
+.hero .content {
+    text-align: start;
+    margin-left: 10vw;
+    margin-bottom: 10vh;
+    background-color: var(--black-opacity);
+    padding: 2vw;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background: var(--primary);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero .btn:hover {
+    color: var(--primary);
+    background: var(--text-color);
+}
+
+.about {
+    background-color: var(--main-color);
+    display: flex;
+    height: max-content;
+    min-height: 60vh;
+}
+
+.about .about-content {
+    text-align: start;
+    padding: 2vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.about .image {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sobre */
+.about .squirtle {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.about .social-media {
+    width: 25%;
+    height: max-content;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.about .social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.about .social-media a:hover {
+    background-color: var(--main-color);
+}
+
+.about .social-media a img {
+    width: 40px;
+    filter: invert(1);
+}
+
+.projects {
+    background-color: var(--main-color);
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+
+/* Projetos Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 5vh;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    text-align: justify;
+}
+
+.card #img3 {
+    width: 180px;
+}
+
+.card .btn {
+    background: var(--primary);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+}
+
+
+.feedbacks {
+    background-color: var(--main-color);
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5vh;
+}
+
+.feedbacks h2,
+.projects h2,
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+.feedbacks .flex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 5vh;
+}
+
+.feedbacks-cards {
+    width: 100%;
+    min-height: max-content;
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.feedbacks-cards .top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    height: max-content;
+}
+
+.feedbacks-cards .top .top-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2vw;
+}
+
+.feedbacks-cards .top .top-text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.feedbacks-cards .top .top-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.feedbacks-cards .top .top-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.feedbacks-cards .top .top-image img {
+    width: 100%;
+}
+
+.feedbacks-cards .content {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.feedbacks-cards .content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    padding: 10px;
+    background: var(--primary);
+    color: white;
+}
+
+.mobile-menu {
+    position: absolute;
+    display: none;
+    margin-top: 12vh;
+    background-color: var(--primary);
+    width: 100%;
+    padding-bottom: 1vh;
+    font-weight: bold;
+}
+
+.mobile-menu p {
+    font-size: 20px;
+}

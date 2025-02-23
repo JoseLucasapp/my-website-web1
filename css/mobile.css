@@ -1,0 +1,161 @@
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .feedbacks h2,
+    .projects h2,
+    .about h2 {
+        font-size: 40px;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--primary);
+    }
+
+    .navbar .logo {
+        width: 100%;
+    }
+
+    .navbar .menu {
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        font-size: 20px;
+        margin-top: 25vh;
+        height: 20vh;
+        background-color: var(--primary);
+        transform: scale(1);
+    }
+
+    .menu a:hover {
+        transform: scale(1);
+        background-color: var(--primary);
+        color: var(--text-color);
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background: url('../assets/page.webp') no-repeat center center/cover;
+        color: white;
+        display: flex;
+        align-items: end;
+        padding-bottom: 0;
+        justify-content: start;
+    }
+
+    .hero .content {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+        background-color: var(--black-opacity);
+        padding-bottom: 5vh;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .hero .btn {
+        font-size: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vh;
+    }
+
+    .about .about-content {
+        width: 90%;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .about .image {
+        min-height: max-content;
+    }
+
+    .about .social-media {
+        align-items: center;
+    }
+
+    .projects {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .card .btn {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .feedbacks {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .feedbacks-cards .top {
+        flex-direction: column;
+    }
+
+    .feedbacks .flex-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .feedbacks-cards .top .top-text h2 {
+        font-size: 30px;
+        text-align: justify;
+        margin-left: 0;
+    }
+
+    .feedbacks-cards .top .top-text p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .feedbacks-cards .content p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .grid-container {
+        min-width: 0;
+        flex-wrap: wrap;
+    }
+
+    .navbar,
+    .hero,
+    .menu {
+        max-width: 100vw;
+    }
+}
