@@ -15,7 +15,7 @@ const feedbacks = [
         ocupation: "Senior Developer/Techlead",
         feedback: "Lucas é um excelente profissional, dedicado em entregar suas tarefas com qualidade máxima e rapidamente, rápido em entender as regras de negócio e aplicar os conceitos no código. Aprende rápido, está sempre disposto a ajudar e ensinar, trabalhar com ele foi uma experiência ótima."
 
-    }
+    },
 ]
 
 window.addEventListener("load", () => {

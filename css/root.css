@@ -22,7 +22,6 @@ button {
 :root {
     --main-color: #121116;
     --primary: #000;
-    --secundary: #005;
     --text-color: #fff;
     --main-font: Fjalla One, sans-serif;
     --black-opacity: rgba(0, 0, 0, 0.5);
