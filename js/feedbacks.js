@@ -1,7 +1,7 @@
 const feedbacks = [
     {
         id: "1",
-        image: "./assets/newmar.jfif",
+        image: "assets/newmar.jfif",
         alt: "Newmar Lucas de Souza Alcântara",
         name: "Newmar Lucas de Souza Alcântara",
         ocupation: "Software engineer",
@@ -9,7 +9,7 @@ const feedbacks = [
     },
     {
         id: "2",
-        image: "./assets/andre.jfif",
+        image: "assets/andre.jfif",
         alt: "André Meireles",
         name: "André Meireles",
         ocupation: "Senior Developer/Techlead",
