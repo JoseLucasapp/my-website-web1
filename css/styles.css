@@ -11,6 +11,13 @@ body {
     width: 100vw;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
 body {
     font-family: var(--main-font);
     color: var(--text-color);
@@ -28,7 +35,7 @@ header {
     height: 15vh;
     width: 100%;
     position: fixed;
-    background: var(--black-opacity);
+    background: var(--main-color);
     top: 0;
     z-index: 999;
 }
@@ -42,6 +49,8 @@ header {
     color: white;
     height: 100%;
     width: 100%;
+
+    box-shadow: 1px 3px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .navbar .logo {
@@ -90,6 +99,7 @@ header {
 
 /* Hero Section */
 .hero {
+    width: 100vw;
     height: 100vh;
     background: url('../assets/page.webp') no-repeat center center/cover;
     color: white;
@@ -199,14 +209,15 @@ header {
     height: max-content;
     flex-direction: column;
     padding-bottom: 5vh;
+    width: 90%;
 }
 
 /* Projetos Grid */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 3fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 2%;
+    padding: 0;
     padding-top: 5vh;
 }
 
@@ -263,24 +274,83 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     padding-bottom: 5vh;
 }
 
 .feedbacks h2,
 .projects h2,
-.about h2 {
+.about h2,
+.work h2 {
     font-size: 40px;
     margin-bottom: 10px;
 }
 
+.work {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
 
+.work .work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5vh;
+}
+
+.work .work-container .work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5vh;
+}
+
+.work .work-container .work-card .work-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+.work .work-container .work-card .work-card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.work .work-container .work-card .work-card-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.work .work-container .work-card .work-card-content span {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.work .work-container .work-card .work-card-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    text-align: justify;
+}
 
 .feedbacks .flex-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
     gap: 20px;
-    padding: 20px;
     padding-top: 5vh;
 }
 
@@ -354,9 +424,19 @@ header {
 
 /* Rodapé */
 footer {
-    padding: 10px;
+    height: 20vh;
     background: var(--primary);
     color: white;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5vh;
 }
 
 .mobile-menu {

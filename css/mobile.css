@@ -98,12 +98,20 @@
     }
 
     .about .social-media {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         align-items: center;
     }
 
     .projects {
+        min-height: max-content;
         padding-top: 1vh;
         padding-bottom: 1vh;
+    }
+
+    .card {
+        width: 100%;
+        min-height: max-content;
     }
 
     .card h3 {
@@ -120,7 +128,6 @@
     }
 
     .feedbacks {
-        padding-top: 1vh;
         padding-bottom: 1vh;
     }
 
@@ -148,9 +155,16 @@
         text-align: justify;
     }
 
+    .work {
+        padding-top: 5vh;
+        padding-bottom: 0;
+    }
+
     .grid-container {
         min-width: 0;
+        min-height: max-content;
         flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 
     .navbar,
