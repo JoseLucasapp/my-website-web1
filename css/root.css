@@ -24,5 +24,5 @@ button {
     --primary: #000;
     --text-color: #fff;
     --main-font: Fjalla One, sans-serif;
-    --black-opacity: rgba(0, 0, 0, 0.5);
+    --black-opacity: rgba(0, 0, 0, 0.8);
 }
