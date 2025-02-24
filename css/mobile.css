@@ -111,24 +111,6 @@
         padding-bottom: 1vh;
     }
 
-    .card {
-        width: 100%;
-        min-height: max-content;
-    }
-
-    .card h3 {
-        font-size: 30px;
-    }
-
-    .card p {
-        font-size: 20px;
-    }
-
-    .card .btn {
-        font-size: 20px;
-        width: 50%;
-    }
-
     .feedbacks {
         padding-bottom: 1vh;
     }
@@ -165,8 +147,27 @@
     .grid-container {
         min-width: 0;
         min-height: max-content;
-        flex-wrap: wrap;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 2vh;
+    }
+
+    .card {
+        width: 100%;
+        min-height: max-content;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .card .btn {
+        font-size: 20px;
+        width: 50%;
     }
 
     .navbar,
